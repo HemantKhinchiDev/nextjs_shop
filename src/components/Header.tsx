@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <header
             id="masthead"
-            className="sticky top-0 z-50 bg-[#111111] text-white shadow-lg"
+            className="sticky top-0 z-50 bg-dark text-white shadow-lg"
         >
             {/* Top contact + social bar (desktop only) */}
             <div className="hidden md:block border-b border-white/10">
@@ -33,16 +33,16 @@ const Header = () => {
                     {/* Left: Address + Phone */}
                     <div className="flex items-center gap-6">
                         <div className="flex items-center gap-2">
-                            <FaMap className="text-pink-500" />
-                            <span className="text-gray-200">
+                            <FaMap className="text-[#cfcfcf]" />
+                            <span className="text-[#cfcfcf]">
                                 4140 Parker Rd. Allentown, New Mexico 31134
                             </span>
                         </div>
                         <div className="flex items-center gap-2">
-                            <FaPhone className="text-pink-500" />
+                            <FaPhone className="text-[#cfcfcf]" />
                             <a
                                 href="tel:(+1) 123-456-3389"
-                                className="text-gray-200 hover:text-pink-400 transition-colors"
+                                className="text-[#cfcfcf] hover:text-pink-400 transition-colors"
                             >
                                 (+1) 123-456-3389
                             </a>
@@ -52,10 +52,10 @@ const Header = () => {
                     {/* Right: Email + Socials */}
                     <div className="flex items-center gap-6">
                         <div className="flex items-center gap-2">
-                            <FaEnvelopeOpen className="text-pink-500" />
+                            <FaEnvelopeOpen className="text-[#cfcfcf]" />
                             <a
                                 href="mailto:info@example.com"
-                                className="text-gray-200 hover:text-pink-400 transition-colors"
+                                className="text-[#cfcfcf] hover:text-pink-400 transition-colors"
                             >
                                 info@example.com
                             </a>
@@ -64,25 +64,25 @@ const Header = () => {
                         <div className="flex items-center gap-3">
                             <button
                                 aria-label="Facebook"
-                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs hover:bg-pink-500 hover:border-pink-500 transition-colors"
+                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs text-[#cfcfcf] hover:bg-pink-500 hover:border-pink-500 transition-colors"
                             >
                                 <FaFacebookF />
                             </button>
                             <button
                                 aria-label="Twitter"
-                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs hover:bg-pink-500 hover:border-pink-500 transition-colors"
+                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs text-[#cfcfcf] hover:bg-pink-500 hover:border-pink-500 transition-colors"
                             >
                                 <FaTwitter />
                             </button>
                             <button
                                 aria-label="Instagram"
-                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs hover:bg-pink-500 hover:border-pink-500 transition-colors"
+                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs text-[#cfcfcf] hover:bg-pink-500 hover:border-pink-500 transition-colors"
                             >
                                 <FaInstagram />
                             </button>
                             <button
                                 aria-label="Pinterest"
-                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs hover:bg-pink-500 hover:border-pink-500 transition-colors"
+                                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-xs text-[#cfcfcf] hover:bg-pink-500 hover:border-pink-500 transition-colors"
                             >
                                 <FaPinterestP />
                             </button>
@@ -727,7 +727,7 @@ const Header = () => {
                 </div>
 
                 {/* Right icons (desktop) */}
-                <div className="hidden md:flex items-center gap-5 text-lg justify-self-end">
+                <div className="hidden md:flex items-center gap-5 text-lg justify-self-end text-[#cfcfcf]">
                     <button
                         className="hover:text-pink-400 transition-colors"
                         aria-label="Search"
@@ -780,7 +780,7 @@ const Header = () => {
 
             {/* Mobile menu (simple, no mega) */}
             {mobileOpen && (
-                <div className="md:hidden bg-[#111111] border-t border-white/10">
+                <div className="md:hidden bg-dark border-t border-white/10">
                     <div className="px-4 py-3 flex flex-col gap-2 text-sm">
                         <details>
                             <summary className="cursor-pointer py-2 text-gray-100">
